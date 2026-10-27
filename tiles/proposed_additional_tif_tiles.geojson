@@ -1,0 +1,434 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD01",
+        "mines": [
+          "Eleonore",
+          "Whabouchi"
+        ],
+        "mine_count": 2,
+        "width_pixels": 5911,
+        "height_pixels": 5081,
+        "approx_width_km": 108.9,
+        "approx_height_km": 152.4,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.17713151905357,
+              51.51820188119774
+            ],
+            [
+              -75.17713151905357,
+              52.887503868781124
+            ],
+            [
+              -76.77011401238272,
+              52.887503868781124
+            ],
+            [
+              -76.77011401238272,
+              51.51820188119774
+            ],
+            [
+              -75.17713151905357,
+              51.51820188119774
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD02",
+        "mines": [
+          "Lac_Amiante",
+          "Mine Carey",
+          "Alliance Magnesium",
+          "Anacon2"
+        ],
+        "mine_count": 4,
+        "width_pixels": 8633,
+        "height_pixels": 5759,
+        "approx_width_km": 179.5,
+        "approx_height_km": 172.5,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -70.66471418386439,
+              45.43570909242446
+            ],
+            [
+              -70.66471418386439,
+              46.98772840879776
+            ],
+            [
+              -72.99126093820554,
+              46.98772840879776
+            ],
+            [
+              -72.99126093820554,
+              45.43570909242446
+            ],
+            [
+              -70.66471418386439,
+              45.43570909242446
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD03",
+        "mines": [
+          "Troilus"
+        ],
+        "mine_count": 1,
+        "width_pixels": 2204,
+        "height_pixels": 1420,
+        "approx_width_km": 41.7,
+        "approx_height_km": 42.6,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.16437086773722,
+              50.807544659930784
+            ],
+            [
+              -74.16437086773722,
+              51.1902269709657
+            ],
+            [
+              -74.75833693359705,
+              51.1902269709657
+            ],
+            [
+              -74.75833693359705,
+              50.807544659930784
+            ],
+            [
+              -74.16437086773722,
+              50.807544659930784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD04",
+        "mines": [
+          "Renard"
+        ],
+        "mine_count": 1,
+        "width_pixels": 2127,
+        "height_pixels": 1327,
+        "approx_width_km": 38.6,
+        "approx_height_km": 39.8,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.90762321097216,
+              52.635256937000364
+            ],
+            [
+              -71.90762321097216,
+              52.992876251608344
+            ],
+            [
+              -72.48083819376883,
+              52.992876251608344
+            ],
+            [
+              -72.48083819376883,
+              52.635256937000364
+            ],
+            [
+              -71.90762321097216,
+              52.635256937000364
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD05",
+        "mines": [
+          "Lac des Iles",
+          "Mine Othmer"
+        ],
+        "mine_count": 2,
+        "width_pixels": 3587,
+        "height_pixels": 3621,
+        "approx_width_km": 74.8,
+        "approx_height_km": 108.5,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.03133494844097,
+              45.57961920094041
+            ],
+            [
+              -75.03133494844097,
+              46.555459094079445
+            ],
+            [
+              -75.99801202568199,
+              46.555459094079445
+            ],
+            [
+              -75.99801202568199,
+              45.57961920094041
+            ],
+            [
+              -75.03133494844097,
+              45.57961920094041
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD06",
+        "mines": [
+          "Niobec"
+        ],
+        "mine_count": 1,
+        "width_pixels": 1927,
+        "height_pixels": 1274,
+        "approx_width_km": 38.4,
+        "approx_height_km": 38.2,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -70.88866418419539,
+              48.362150793500625
+            ],
+            [
+              -70.88866418419539,
+              48.705486895091106
+            ],
+            [
+              -71.40798024994488,
+              48.705486895091106
+            ],
+            [
+              -71.40798024994488,
+              48.362150793500625
+            ],
+            [
+              -70.88866418419539,
+              48.362150793500625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD07",
+        "mines": [
+          "Lac Jeannine",
+          "Lac Bloom",
+          "Mont Wright",
+          "Lac Fire"
+        ],
+        "mine_count": 4,
+        "width_pixels": 6001,
+        "height_pixels": 5477,
+        "approx_width_km": 110.3,
+        "approx_height_km": 164.2,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -66.75892916004112,
+              51.58476704375099
+            ],
+            [
+              -66.75892916004112,
+              53.06078888708778
+            ],
+            [
+              -68.3761661660415,
+              53.06078888708778
+            ],
+            [
+              -68.3761661660415,
+              51.58476704375099
+            ],
+            [
+              -66.75892916004112,
+              51.58476704375099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD08",
+        "mines": [
+          "Mine 14",
+          "Raglan"
+        ],
+        "mine_count": 2,
+        "width_pixels": 3137,
+        "height_pixels": 1410,
+        "approx_width_km": 44.7,
+        "approx_height_km": 42.3,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.17909866411493,
+              61.50216778043051
+            ],
+            [
+              -73.17909866411493,
+              61.88215514561307
+            ],
+            [
+              -74.02450317799982,
+              61.88215514561307
+            ],
+            [
+              -74.02450317799982,
+              61.50216778043051
+            ],
+            [
+              -73.17909866411493,
+              61.50216778043051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD09",
+        "mines": [
+          "CEZinc"
+        ],
+        "mine_count": 1,
+        "width_pixels": 1774,
+        "height_pixels": 1218,
+        "approx_width_km": 37.5,
+        "approx_height_km": 36.5,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.8762811561201,
+              45.06973544567417
+            ],
+            [
+              -73.8762811561201,
+              45.39797985049144
+            ],
+            [
+              -74.3543645503285,
+              45.39797985049144
+            ],
+            [
+              -74.3543645503285,
+              45.06973544567417
+            ],
+            [
+              -73.8762811561201,
+              45.06973544567417
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tile_id": "ADD10",
+        "mines": [
+          "Mines Gaspe"
+        ],
+        "mine_count": 1,
+        "width_pixels": 2114,
+        "height_pixels": 1388,
+        "approx_width_km": 41.7,
+        "approx_height_km": 41.6,
+        "extension_from_previous_km": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -65.22900839965718,
+              48.7760944764229
+            ],
+            [
+              -65.22900839965718,
+              49.15015296073027
+            ],
+            [
+              -65.79871995284577,
+              49.15015296073027
+            ],
+            [
+              -65.79871995284577,
+              48.7760944764229
+            ],
+            [
+              -65.22900839965718,
+              48.7760944764229
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
