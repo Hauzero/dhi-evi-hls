@@ -18,8 +18,6 @@ from scipy import signal
 TARGET_YEARS = [2018, 2021, 2024]
 EXPORT_SCALE = 30          # metres
 EXPORT_FLOAT32 = True      # halves file size; values unchanged to ~7 digits
-MAX_VERTICES = 3000        # simplify rings above this before sending to GEE
-SIMPLIFY_TOLERANCE = 0.01  # degrees (~1 km)
 BATCH_SIZE = 20            # tiles per submission batch (rate limiting)
 
 
@@ -36,26 +34,9 @@ def load_tiles(path, tile_ids=None):
     return features
 
 
-def _simplify_ring(coords, tolerance=SIMPLIFY_TOLERANCE):
-    try:
-        from shapely.geometry import LinearRing
-        simplified = LinearRing(coords).simplify(tolerance, preserve_topology=False)
-        result = list(simplified.coords)
-    except ImportError:
-        step = max(1, len(coords) // MAX_VERTICES)
-        result = coords[::step]
-        if result[0] != result[-1]:
-            result.append(result[0])
-    return [[c[0], c[1]] for c in result]
-
-
 def build_roi(feature):
     """Return an ee.Geometry.Polygon for a GeoJSON Polygon feature."""
-    ring = feature["geometry"]["coordinates"][0]
-    if len(ring) > MAX_VERTICES:
-        ring = _simplify_ring(ring)
-    else:
-        ring = [[c[0], c[1]] for c in ring]
+    ring = [[c[0], c[1]] for c in feature["geometry"]["coordinates"][0]]
     return ee.Geometry.Polygon([ring])
 
 

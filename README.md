@@ -18,18 +18,41 @@ Default years: 2018, 2021, 2024.
 ## Usage
 1. `pip install -r requirements.txt`
 2. You need a Google Earth Engine account and your own Cloud project
-   ([register](https://earthengine.google.com/)). Set `EE_PROJECT` in the notebook.
-3. Open `dhi_evi_export.ipynb`, authenticate on first run (`ee.Authenticate()`), run the cells.
-   Exports land in Google Drive under `DHI_tiles/<year>/<tile_id>_DHI_<year>.tif`.
+   ([register](https://earthengine.google.com/)).
+3. Run from this folder:
 
-`tiles/proposed_additional_tif_tiles.geojson` holds the 10 additional tiles
-(ADD01-ADD10). Pass `tile_ids=[...]` to `load_tiles` to run a subset.
+```python
+import ee
+import dhi_evi
+
+ee.Authenticate()                      # first time only
+ee.Initialize(project="your-gee-cloud-project")
+
+tiles = dhi_evi.load_tiles("tiles/proposed_additional_tif_tiles.geojson")
+# tiles = dhi_evi.load_tiles(..., tile_ids=["ADD03", "ADD04"])   # subset
+dhi_evi.run_exports(tiles, years=[2018, 2021, 2024], drive_folder="DHI_tiles")
+```
+
+Exports land in Google Drive under `DHI_tiles/<year>/<tile_id>_DHI_<year>.tif`.
+Progress: https://code.earthengine.google.com/tasks
+
+To find and resubmit failed tasks afterwards:
+
+```python
+failed = dhi_evi.failed_tasks({"ADD01", "ADD02"}, [2018, 2021, 2024])
+by_id = {ft["properties"]["tile_id"]: ft for ft in tiles}
+for (tid, yr) in failed:
+    dhi_evi.export_tile_year(tid, yr, dhi_evi.build_roi(by_id[tid]), "DHI_tiles")
+```
+
+`tiles/proposed_additional_tif_tiles.geojson` holds the 10 additional tiles (ADD01-ADD10).
 
 ## Notes
 - The largest tiles (ADD01, ADD02, ADD07; up to ~180 x 170 km) may exceed GEE
-  export limits. The notebook has a cell that lists failed tasks; if they
-  recur, split the tile into smaller polygons.
-- The tiles are exported as the polygon region, not the bounding box.
+  export limits. If they fail repeatedly, split the tile into smaller polygons.
+
+## Background
+The project concept note is in `docs/`.
 
 ## Citation
 Code and data: Dr. Leon Hauser, Department of Geography, University of Zurich (UZH).
